@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: sales-analytics-dashboard
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server
+    plan: free
+    
